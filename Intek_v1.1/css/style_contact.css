@@ -1,0 +1,44 @@
+.hdr-con {
+	height: 149px;
+	background: #449bb5 url('../images/hdr-back.png');
+}
+
+.hdr-con2 {
+	height: 240px;
+	background: #ffffff;
+}
+
+.body-con {
+	height: 1230px;
+	background: #33384d url('../images/bck_contact.png');
+}
+.image{
+	margin-top:40px;
+}
+.cmpny{
+	margin-top: 40px;
+}
+.list{
+	margin-top:40px;
+}
+.phn{
+	margin-left: 9px;
+}
+.abth1{
+	text-transform: uppercase;
+	font-size: 4em;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+.abth2{
+	text-transform: uppercase;
+	font-size: 2em;
+	padding: 10px;
+	margin-top: 40px;
+}
+.social{
+	text-align: center;
+}

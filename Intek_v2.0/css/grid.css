@@ -1,0 +1,472 @@
+/* 
+========================
+  GRIDINATOR CSS v0.4.1
+  http://gridinator.com/
+  
+  GRIDINATOR CSS is a very basic framework to create
+  grid-based layouts. The content of this file is 
+  provided as-is, without support.
+  
+  If you would like to contact GRIDINATOR to suggest
+  improvements, to ask for help or to file a bug report, 
+  please feel free to email: gridinator@steff.me
+  
+  Your grid settings:
+  	columns: 12
+  	column width: 68px
+  	column margin: 15px
+  	container margin: 20px
+    
+=========================
+*/
+* { /* quick reset */
+	margin: 0;	
+}
+
+body { 
+	
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+.wrapper {
+	margin: 0 auto; /* This centers the grid. Remove this line to place the grid on the left of the page. */
+	text-align: left;
+	max-width: 1021px;
+}
+
+.inner-wrapper {
+	/* The file gridinator.png is a grid background; delete this line to remove it. If you did not generate a background image, you can still do so by going to http://gridinator.com/ and entering the details found at the top of this CSS file. You will then be given a grid image to match your original grid.  */
+	clear: both;
+	display: inline;/* IE double margin fix. Feel free to move this to your IE specific stylesheets. */
+	float: left;
+	padding: 0 20px 0 20px;
+	position: relative;
+	max-width: 981px;
+}
+
+
+* html .wrapper {
+	height: 1%;
+	overflow: hidden;
+	display: block;
+	width:expression(((document.compatMode && document.compatMode=='CSS1Compat') ? document.documentElement.clientWidth : document.body.clientWidth) > 1023 ? "1021px" :  "auto");
+}
+
+* html .inner-wrapper { /* Clearing nicely for IE6. */
+	width:expression(((document.compatMode && document.compatMode=='CSS1Compat') ? document.documentElement.clientWidth : document.body.clientWidth) > 983 ? "981px" :  "auto");
+}
+
+
+
+.container {
+	clear: both;
+	float: left;
+	margin: 0 0 5% 5%;
+	width: 90%;	
+}
+.one-col, .two-col, .three-col, .four-col, .five-col, .six-col, .seven-col, .eight-col, .nine-col, .ten-col, .eleven-col, .twelve-col {
+	
+	clear: none;
+	display: inline;
+	float: left;
+	margin-bottom: 10px;
+	margin-right:1.52906%;
+	overflow:hidden;
+	padding: 0;
+	position: relative;
+}
+ .one-col {
+	width: 6.9317%;
+}
+.two-col {
+	width: 15.39245%;
+}
+.three-col {
+	width: 23.85321%;
+}
+.four-col {
+	width: 32.31396%;
+}
+.five-col {
+	width: 40.77471%;
+}
+.six-col {
+	width: 49.23547%;
+}
+.seven-col {
+	width: 57.69622%;
+}
+.eight-col {
+	width: 66.15698%;
+}
+.nine-col {
+	width: 74.61773%;
+}
+.ten-col {
+	width: 83.07849%;
+}
+.eleven-col {
+	width: 91.53924%;
+}
+.twelve-col {
+	width:100%;
+	margin-right:10%;
+	
+}
+ .twelve-col .one-col {
+	width: 6.9317%;
+	margin-right: 1.52905%;
+}
+.twelve-col .two-col {
+	width: 15.39245%;
+	margin-right: 1.52905%;
+}
+.twelve-col .three-col {
+	width: 23.85321%;
+	margin-right: 1.52905%;
+}
+.twelve-col .four-col {
+	width: 32.31396%;
+	margin-right: 1.52905%;
+}
+.twelve-col .five-col {
+	width: 40.77471%;
+	margin-right: 1.52905%;
+}
+.twelve-col .six-col {
+	width: 49.23547%;
+	margin-right: 1.52905%;
+}
+.twelve-col .seven-col {
+	width: 57.69622%;
+	margin-right: 1.52905%;
+}
+.twelve-col .eight-col {
+	width: 66.15698%;
+	margin-right: 1.52905%;
+}
+.twelve-col .nine-col {
+	width: 74.61773%;
+	margin-right: 1.52905%;
+}
+.twelve-col .ten-col {
+	width: 83.07849%;
+	margin-right: 1.52905%;
+}
+.twelve-col .eleven-col {
+	width: 91.53924%;
+	margin-right: 1.52905%;
+}
+.twelve-col .twelve-col {
+	width: 100%;
+	margin-right: 0;
+}
+.eleven-col .one-col {
+	width: 7.57238%;
+	margin-right: 1.67037%;
+}
+.eleven-col .two-col {
+	width: 16.81514%;
+	margin-right: 1.67037%;
+}
+.eleven-col .three-col {
+	width: 26.0579%;
+	margin-right: 1.67037%;
+}
+.eleven-col .four-col {
+	width: 35.30066%;
+	margin-right: 1.67037%;
+}
+.eleven-col .five-col {
+	width: 44.54342%;
+	margin-right: 1.67037%;
+}
+.eleven-col .six-col {
+	width: 53.78619%;
+	margin-right: 1.67037%;
+}
+.eleven-col .seven-col {
+	width: 63.02895%;
+	margin-right: 1.67037%;
+}
+.eleven-col .eight-col {
+	width: 72.27171%;
+	margin-right: 1.67037%;
+}
+.eleven-col .nine-col {
+	width: 81.51447%;
+	margin-right: 1.67037%;
+}
+.eleven-col .ten-col {
+	width: 90.75723%;
+	margin-right: 1.67037%;
+}
+.eleven-col .eleven-col {
+	width: 100%;
+	margin-right: 0;
+}
+.ten-col .one-col {
+	width: 8.34355%;
+	margin-right: 1.84049%;
+}
+.ten-col .two-col {
+	width: 18.5276%;
+	margin-right: 1.84049%;
+}
+.ten-col .three-col {
+	width: 28.71165%;
+	margin-right: 1.84049%;
+}
+.ten-col .four-col {
+	width: 38.8957%;
+	margin-right: 1.84049%;
+}
+.ten-col .five-col {
+	width: 49.07975%;
+	margin-right: 1.84049%;
+}
+.ten-col .six-col {
+	width: 59.2638%;
+	margin-right: 1.84049%;
+}
+.ten-col .seven-col {
+	width: 69.44785%;
+	margin-right: 1.84049%;
+}
+.ten-col .eight-col {
+	width: 79.6319%;
+	margin-right: 1.84049%;
+}
+.ten-col .nine-col {
+	width: 89.81595%;
+	margin-right: 1.84049%;
+}
+.ten-col .ten-col {
+	width: 100%;
+	margin-right: 0;
+}
+.nine-col .one-col {
+	width: 9.28961%;
+	margin-right: 2.04918%;
+}
+.nine-col .two-col {
+	width: 20.62841%;
+	margin-right: 2.04918%;
+}
+.nine-col .three-col {
+	width: 31.96721%;
+	margin-right: 2.04918%;
+}
+.nine-col .four-col {
+	width: 43.30601%;
+	margin-right: 2.04918%;
+}
+.nine-col .five-col {
+	width: 54.6448%;
+	margin-right: 2.04918%;
+}
+.nine-col .six-col {
+	width: 65.9836%;
+	margin-right: 2.04918%;
+}
+.nine-col .seven-col {
+	width: 77.3224%;
+	margin-right: 2.04918%;
+}
+.nine-col .eight-col {
+	width: 88.6612%;
+	margin-right: 2.04918%;
+}
+.nine-col .nine-col {
+	width: 100%;
+	margin-right: 0;
+}
+.eight-col .one-col {
+	width: 10.47765%;
+	margin-right: 2.31124%;
+}
+.eight-col .two-col {
+	width: 23.26656%;
+	margin-right: 2.31124%;
+}
+.eight-col .three-col {
+	width: 36.05546%;
+	margin-right: 2.31124%;
+}
+.eight-col .four-col {
+	width: 48.84437%;
+	margin-right: 2.31124%;
+}
+.eight-col .five-col {
+	width: 61.63328%;
+	margin-right: 2.31124%;
+}
+.eight-col .six-col {
+	width: 74.42218%;
+	margin-right: 2.31124%;
+}
+.eight-col .seven-col {
+	width: 87.21109%;
+	margin-right: 2.31124%;
+}
+.eight-col .eight-col {
+	width: 100%;
+	margin-right: 0;
+}
+.seven-col .one-col {
+	width: 12.01413%;
+	margin-right: 2.65017%;
+}
+.seven-col .two-col {
+	width: 26.67844%;
+	margin-right: 2.65017%;
+}
+.seven-col .three-col {
+	width: 41.34275%;
+	margin-right: 2.65017%;
+}
+.seven-col .four-col {
+	width: 56.00706%;
+	margin-right: 2.65017%;
+}
+.seven-col .five-col {
+	width: 70.67137%;
+	margin-right: 2.65017%;
+}
+.seven-col .six-col {
+	width: 85.33568%;
+	margin-right: 2.65017%;
+}
+.seven-col .seven-col {
+	width: 100%;
+	margin-right: 0;
+}
+.six-col .one-col {
+	width: 14.07867%;
+	margin-right: 3.10559%;
+}
+.six-col .two-col {
+	width: 31.26293%;
+	margin-right: 3.10559%;
+}
+.six-col .three-col {
+	width: 48.4472%;
+	margin-right: 3.10559%;
+}
+.six-col .four-col {
+	width: 65.63146%;
+	margin-right: 3.10559%;
+}
+.six-col .five-col {
+	width: 82.81573%;
+	margin-right: 3.10559%;
+}
+.six-col .six-col {
+	width: 100%;
+	margin-right: 0;
+}
+.five-col .one-col {
+	width: 17%;
+	margin-right: 3.75%;
+}
+.five-col .two-col {
+	width: 37.75%;
+	margin-right: 3.75%;
+}
+.five-col .three-col {
+	width: 58.5%;
+	margin-right: 3.75%;
+}
+.five-col .four-col {
+	width: 79.25%;
+	margin-right: 3.75%;
+}
+.five-col .five-col {
+	width: 100%;
+	margin-right: 0;
+}
+.four-col .one-col {
+	width: 21.4511%;
+	margin-right: 4.73186%;
+}
+.four-col .two-col {
+	width: 47.63406%;
+	margin-right: 4.73186%;
+}
+.four-col .three-col {
+	width: 73.81703%;
+	margin-right: 4.73186%;
+}
+.four-col .four-col {
+	width: 100%;
+	margin-right: 0;
+}
+.three-col .one-col {
+	width: 29.05982%;
+	margin-right: 6.41025%;
+}
+.three-col .two-col {
+	width: 64.52991%;
+	margin-right: 6.41025%;
+}
+.three-col .three-col {
+	width: 100%;
+	margin-right: 0;
+}
+.two-col .one-col {
+	width: 45.03311%;
+	margin-right: 9.93377%;
+}
+.two-col .two-col {
+	width: 100%;
+	margin-right: 0;
+}
+.one-col .one-col {
+	width: 100%;
+	margin-right: 0;
+}
+ .twelve-col .last-col {
+	margin-right: 0;
+}
+.eleven-col .last-col {
+	margin-right: 0;
+}
+.ten-col .last-col {
+	margin-right: 0;
+}
+.nine-col .last-col {
+	margin-right: 0;
+}
+.eight-col .last-col {
+	margin-right: 0;
+}
+.seven-col .last-col {
+	margin-right: 0;
+}
+.six-col .last-col {
+	margin-right: 0;
+}
+.five-col .last-col {
+	margin-right: 0;
+}
+.four-col .last-col {
+	margin-right: 0;
+}
+.three-col .last-col {
+	margin-right: 0;
+}
+.two-col .last-col {
+	margin-right: 0;
+}
+.one-col .last-col {
+	margin-right: 0;
+}
+.clear { /* Useful generic clearing class. */
+	clear: both;
+}
+.last-col {
+	margin-right: 0;
+}
